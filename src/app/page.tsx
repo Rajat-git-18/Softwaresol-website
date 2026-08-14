@@ -2,8 +2,9 @@ import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
 import Practices from "@/components/sections/Practices";
 import Products from "@/components/sections/Products";
+import Projects from "@/components/sections/Projects";
 import AiStandard from "@/components/sections/AiStandard";
-import Reviews from "@/components/sections/Reviews";
+import WhyUs from "@/components/sections/WhyUs";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 
@@ -15,8 +16,9 @@ export default function Home() {
         <Hero />
         <Practices />
         <Products />
+        <Projects />
         <AiStandard />
-        <Reviews />
+        <WhyUs />
         <Contact />
       </main>
       <Footer />

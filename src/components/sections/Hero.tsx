@@ -1,7 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Code2, Layers, Sparkles, Zap } from "lucide-react";
+import {
+  ArrowRight,
+  MessageCircle,
+  Smartphone,
+  Store,
+  Utensils,
+  Dumbbell,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
 
@@ -15,35 +22,34 @@ interface ConceptBubble {
 
 const CONCEPT_BUBBLES: ConceptBubble[] = [
   {
-    label: "SOLID Principles",
-    icon: Layers,
+    label: "Restaurants",
+    icon: Utensils,
     className: "left-0 top-[8%] sm:-left-4",
     delay: 0,
     duration: 4.2,
   },
   {
-    label: "Modular Architecture",
-    icon: Code2,
+    label: "Gyms & Studios",
+    icon: Dumbbell,
     className: "right-0 top-[2%] sm:-right-2",
     delay: 0.4,
     duration: 3.8,
   },
   {
-    label: "60fps Performance",
-    icon: Zap,
+    label: "Local Shops",
+    icon: Store,
     className: "bottom-[18%] left-0 sm:-left-6",
     delay: 0.8,
     duration: 4.5,
   },
   {
-    label: "Clean OOPs",
-    icon: Sparkles,
+    label: "Mobile Ready",
+    icon: Smartphone,
     className: "bottom-[8%] right-0 sm:-right-4",
     delay: 1.2,
     duration: 3.6,
   },
 ];
-
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
   visible: (i: number) => ({
@@ -106,37 +112,30 @@ function DeveloperVisual() {
           <span className="h-2.5 w-2.5 rounded-full bg-zinc-700" />
           <span className="h-2.5 w-2.5 rounded-full bg-zinc-700" />
           <span className="ml-3 font-mono text-[10px] text-zinc-500">
-            AppArchitecture.tsx
+            your-business.web
           </span>
         </div>
 
-        {/* Code + character area */}
+        {/* Preview + character area */}
         <div className="relative flex h-[calc(100%-2.5rem)] flex-col justify-between p-4 sm:p-5">
           <pre className="font-mono text-[10px] leading-5 text-zinc-500 sm:text-xs sm:leading-6">
             <code>
-              <span className="text-violet-400">export</span>{" "}
-              <span className="text-cyan-400">class</span>{" "}
-              <span className="text-zinc-100">AppCore</span> {"{"}
+              <span className="text-zinc-500">// Built for local businesses</span>
+              {"\n"}
+              <span className="text-violet-400">const</span>{" "}
+              <span className="text-zinc-100">site</span> = {"{"}
               {"\n"}
               {"  "}
-              <span className="text-violet-400">implements</span>{" "}
-              <span className="text-zinc-300">IModule</span> {"{"}
-              {"\n"}
-              {"    "}
-              <span className="text-zinc-500">// SOLID · Modular · Fast</span>
-              {"\n"}
-              {"    "}
-              <span className="text-cyan-400">render</span>() {"{"}
-              {"\n"}
-              {"      "}
-              <span className="text-violet-400">return</span>{" "}
-              <span className="text-emerald-400">&lt;Scale /&gt;</span>
-              {"\n"}
-              {"    "}
-              {"}"}
+              <span className="text-cyan-400">mobile</span>:{" "}
+              <span className="text-emerald-400">true</span>,
               {"\n"}
               {"  "}
-              {"}"}
+              <span className="text-cyan-400">whatsapp</span>:{" "}
+              <span className="text-emerald-400">true</span>,
+              {"\n"}
+              {"  "}
+              <span className="text-cyan-400">orders</span>:{" "}
+              <span className="text-emerald-400">"easy"</span>,
               {"\n"}
               {"}"}
             </code>
@@ -218,8 +217,8 @@ export default function Hero() {
             animate="visible"
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-[#12131A]/80 px-3.5 py-1.5 text-xs font-medium text-zinc-300 backdrop-blur-sm sm:text-sm"
           >
-            <span aria-hidden>🚀</span>
-            <span>Enterprise-Grade Mobile &amp; Software Engineering</span>
+            <span aria-hidden>✨</span>
+            <span>Websites &amp; apps for local businesses</span>
           </motion.div>
 
           <motion.h1
@@ -229,9 +228,9 @@ export default function Hero() {
             animate="visible"
             className="max-w-xl text-4xl font-semibold tracking-tight text-zinc-50 sm:text-5xl lg:text-[3.25rem] lg:leading-[1.1]"
           >
-            Engineering Scalable Mobile Apps &amp;{" "}
+            Websites &amp; Apps That Help Your Business{" "}
             <span className="bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">
-              Clean Code Architecture
+              Grow Online
             </span>
           </motion.h1>
 
@@ -242,8 +241,8 @@ export default function Hero() {
             animate="visible"
             className="mt-5 max-w-lg text-base leading-relaxed text-zinc-400 sm:text-lg"
           >
-            Specializing in React Native, SOLID Principles, and High-Performance
-            Cross-Platform Systems.
+            Simple, mobile-friendly websites for restaurants, gyms, PGs, and
+            local shops — built to get you more enquiries, orders, and bookings.
           </motion.p>
 
           <motion.div
@@ -253,18 +252,21 @@ export default function Hero() {
             animate="visible"
             className="mt-8 flex flex-wrap items-center gap-3"
           >
-            <Link
-              href="#practices"
+            <a
+              href="https://wa.me/917015885212"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg bg-zinc-100 px-5 py-2.5 text-sm font-semibold text-zinc-950 transition-all duration-300 hover:bg-white hover:shadow-[0_0_28px_rgba(255,255,255,0.18)]"
             >
-              Explore Practices
-              <ArrowRight className="h-4 w-4" />
-            </Link>
+              <MessageCircle className="h-4 w-4" />
+              Chat on WhatsApp
+            </a>
             <Link
-              href="#products"
-              className="border-glow inline-flex items-center rounded-lg border border-zinc-700 bg-[#12131A] px-5 py-2.5 text-sm font-semibold text-zinc-100 transition-all duration-300 hover:border-cyan-500/40 hover:shadow-[0_0_24px_rgba(34,211,238,0.12)]"
+              href="#projects"
+              className="border-glow inline-flex items-center gap-2 rounded-lg border border-zinc-700 bg-[#12131A] px-5 py-2.5 text-sm font-semibold text-zinc-100 transition-all duration-300 hover:border-cyan-500/40 hover:shadow-[0_0_24px_rgba(34,211,238,0.12)]"
             >
-              View Products
+              See Examples
+              <ArrowRight className="h-4 w-4" />
             </Link>
           </motion.div>
         </div>

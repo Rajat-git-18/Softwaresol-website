@@ -9,7 +9,7 @@ const NAV_LINKS: FooterNavLink[] = [
   { label: "Practices", href: "#practices" },
   { label: "Products", href: "#products" },
   { label: "AI Standard", href: "#ai-standard" },
-  { label: "Reviews", href: "#reviews" },
+  { label: "Why Us", href: "#why-us" },
   { label: "Contact", href: "#contact" },
 ];
 

@@ -14,7 +14,7 @@ const NAV_LINKS: NavLink[] = [
   { label: "Practices", href: "#practices" },
   { label: "Products", href: "#products" },
   { label: "AI Standard", href: "#ai-standard" },
-  { label: "Reviews", href: "#reviews" },
+  { label: "Why Us", href: "#why-us" },
 ];
 
 export default function Navbar() {
