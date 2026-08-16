@@ -11,8 +11,8 @@ interface NavLink {
 }
 
 const NAV_LINKS: NavLink[] = [
-  { label: "Practices", href: "#practices" },
-  { label: "Products", href: "#products" },
+  { label: "What You Get", href: "#what-you-get" },
+  { label: "Projects", href: "#projects" },
   { label: "AI Standard", href: "#ai-standard" },
   { label: "Why Us", href: "#why-us" },
 ];

@@ -1,63 +1,63 @@
 "use client";
 
 import {
-  Layers,
-  Boxes,
   Gauge,
+  MessageCircle,
   ShieldCheck,
+  Smartphone,
   type LucideIcon,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
-interface PracticeCard {
+interface BenefitCard {
   title: string;
   description: string;
   points: string[];
   icon: LucideIcon;
 }
 
-const PRACTICES: PracticeCard[] = [
+const BENEFITS: BenefitCard[] = [
   {
-    title: "SOLID Principles in Action",
+    title: "Fast-Loading Websites",
     description:
-      "Architecture grounded in proven software design principles for long-term maintainability.",
+      "Pages that open quickly so visitors stay, browse, and contact you — not bounce away.",
     points: [
-      "Single Responsibility",
-      "Clean Separation",
-      "Decoupled logic",
-    ],
-    icon: Layers,
-  },
-  {
-    title: "OOPs & Clean Architecture",
-    description:
-      "Domain-driven structure that keeps UI, business logic, and infrastructure clearly separated.",
-    points: [
-      "Modular component hierarchies",
-      "Reusable UI & domain patterns",
-      "Testable boundaries",
-    ],
-    icon: Boxes,
-  },
-  {
-    title: "60fps Performance",
-    description:
-      "Smooth, responsive experiences engineered for real-world mobile and web constraints.",
-    points: [
-      "Memory leak prevention",
-      "Optimized React Native state",
-      "Render-path profiling",
+      "Quick load on phone data",
+      "Smooth browsing experience",
+      "Fewer abandoned visits",
     ],
     icon: Gauge,
   },
   {
-    title: "Robust Security & Offline-First",
+    title: "Mobile-Friendly Design",
     description:
-      "Resilient systems that stay secure and usable even when connectivity drops.",
+      "Looks clear and easy to use on phones — where most of your customers will find you.",
     points: [
-      "Secure API communications",
-      "Offline data sync",
-      "Reliable storage",
+      "Works on all screen sizes",
+      "Easy buttons and menus",
+      "Built for real phone use",
+    ],
+    icon: Smartphone,
+  },
+  {
+    title: "WhatsApp Integration",
+    description:
+      "Let customers message you, place orders, or ask questions in one tap.",
+    points: [
+      "Order / enquiry buttons",
+      "Direct chat with your number",
+      "Simple for your customers",
+    ],
+    icon: MessageCircle,
+  },
+  {
+    title: "Secure & Reliable",
+    description:
+      "A dependable site that stays online and keeps your business information safe.",
+    points: [
+      "Secure contact forms",
+      "Stable hosting setup",
+      "Easy for you to update",
     ],
     icon: ShieldCheck,
   },
@@ -82,14 +82,15 @@ const cardVariants = {
 
 export default function Practices() {
   return (
-    <section id="practices" className="relative scroll-mt-20 py-20 sm:py-28">
+    <section id="what-you-get" className="relative scroll-mt-20 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
-            Our Engineering Standards &amp; Practices
+            What You Get
           </h2>
           <p className="mt-4 text-base text-zinc-400 sm:text-lg">
-            How we write maintainable, enterprise-grade software.
+            Practical features that help local businesses get found, get
+            enquiries, and grow online.
           </p>
         </div>
 
@@ -100,11 +101,11 @@ export default function Practices() {
           viewport={{ once: true, margin: "-80px" }}
           className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"
         >
-          {PRACTICES.map((practice) => {
-            const Icon = practice.icon;
+          {BENEFITS.map((benefit) => {
+            const Icon = benefit.icon;
             return (
               <motion.article
-                key={practice.title}
+                key={benefit.title}
                 variants={cardVariants}
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 320, damping: 22 }}
@@ -115,14 +116,14 @@ export default function Practices() {
                 </div>
 
                 <h3 className="text-base font-semibold text-zinc-100 sm:text-lg">
-                  {practice.title}
+                  {benefit.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-zinc-400">
-                  {practice.description}
+                  {benefit.description}
                 </p>
 
                 <ul className="mt-5 flex flex-1 flex-col gap-2 border-t border-zinc-800/80 pt-4">
-                  {practice.points.map((point) => (
+                  {benefit.points.map((point) => (
                     <li
                       key={point}
                       className="flex items-start gap-2 text-sm text-zinc-300"

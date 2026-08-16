@@ -6,18 +6,18 @@ interface FooterNavLink {
 }
 
 const NAV_LINKS: FooterNavLink[] = [
-  { label: "Practices", href: "#practices" },
-  { label: "Products", href: "#products" },
+  { label: "What You Get", href: "#what-you-get" },
+  { label: "Projects", href: "#projects" },
   { label: "AI Standard", href: "#ai-standard" },
   { label: "Why Us", href: "#why-us" },
   { label: "Contact", href: "#contact" },
 ];
 
 const TECH_STACK: string[] = [
+  "React",
   "React Native",
-  "TypeScript",
   "Node.js",
-  "SQL",
+  "WhatsApp",
   "Next.js",
 ];
 
@@ -26,11 +26,9 @@ export default function Footer() {
     <footer className="relative border-t border-zinc-800/80 bg-[#090A0F]">
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
         <p className="mx-auto max-w-3xl text-center text-sm leading-relaxed text-zinc-400 sm:text-base">
-          Software Solutions is a craftsmanship-driven engineering studio
-          dedicated to clean architecture, SOLID principles, and modern mobile
-          systems. We build scalable React Native apps and full-stack platforms
-          with the same rigor we expect from production software — maintainable,
-          performant, and ready to grow.
+          Software Solutions builds websites and apps that help local businesses
+          grow online — restaurants, gyms, PGs, and shops. Simple, mobile-friendly,
+          and focused on getting you more enquiries, orders, and bookings.
         </p>
 
         <div className="mt-12 grid gap-10 border-t border-zinc-800/80 pt-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -45,8 +43,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-3 text-xs leading-relaxed text-zinc-500">
-              softwaresol.in — enterprise-grade mobile &amp; software
-              engineering.
+              softwaresol.in — websites &amp; apps that help local businesses
+              grow.
             </p>
           </div>
 
@@ -115,7 +113,7 @@ export default function Footer() {
           <p className="text-xs text-zinc-600">
             © 2026 Software Solutions. All rights reserved.
           </p>
-          <p className="text-xs text-zinc-600">Built with craftsmanship.</p>
+          <p className="text-xs text-zinc-600">Helping local businesses grow.</p>
         </div>
       </div>
     </footer>

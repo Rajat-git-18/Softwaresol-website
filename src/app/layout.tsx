@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 const siteUrl = "https://softwaresol.in";
 const siteName = "Software Solutions";
 const siteTitle =
-  "Software Solutions | Enterprise Mobile & Software Engineering";
+  "Software Solutions | Websites & Apps for Local Businesses";
 const siteDescription =
-  "Software Solutions builds scalable React Native apps and full-stack platforms with clean architecture, SOLID principles, and high-performance cross-platform systems.";
+  "Websites and apps that help local businesses grow — restaurants, gyms, PGs, and shops. Mobile-friendly, WhatsApp-ready, and built to get you more enquiries.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
   keywords: [
     "Software Solutions",
     "softwaresol.in",
-    "React Native development",
-    "mobile app development",
-    "clean architecture",
-    "SOLID principles",
-    "TypeScript",
-    "cross-platform apps",
-    "enterprise software engineering",
-    "full-stack development",
+    "website for local business",
+    "restaurant website",
+    "gym website",
+    "WhatsApp ordering",
+    "mobile-friendly website",
+    "small business website India",
+    "PG website",
+    "React Native apps",
   ],
   category: "technology",
   alternates: {
