@@ -1,8 +1,8 @@
-version: 1.0.2
+version: 1.0.3
 files:
-  - url: Ledger Setup 1.0.2.exe
-    sha512: ON1/oPa6Lb4K069r3paZ/PEpJcEhRZGQ4DJgc6oYSJTN6WDtOtJ+DToevyA0C96g74v1QATWCxjfZ7iqaSGLRg==
-    size: 99378222
-path: Ledger Setup 1.0.2.exe
-sha512: ON1/oPa6Lb4K069r3paZ/PEpJcEhRZGQ4DJgc6oYSJTN6WDtOtJ+DToevyA0C96g74v1QATWCxjfZ7iqaSGLRg==
-releaseDate: '2026-11-25T06:30:24.555Z'
+  - url: Ledger Setup 1.0.3.exe
+    sha512: RhxbeWl4Lyl/va7jhKKmN2r3urDnjdnhvtmYIxpWAbDdHDtlIhaGsv39QGQr0Z0Ii+Wm3MQGoNZbw/zB7+VmBA==
+    size: 99380265
+path: Ledger Setup 1.0.3.exe
+sha512: RhxbeWl4Lyl/va7jhKKmN2r3urDnjdnhvtmYIxpWAbDdHDtlIhaGsv39QGQr0Z0Ii+Wm3MQGoNZbw/zB7+VmBA==
+releaseDate: '2026-11-26T06:01:41.216Z'
